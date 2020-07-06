@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    color:white;
+
+}
+.hi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bearimg{
+    width:20%;
+    height: auto;
+    display: inline-flex;
+}
+.hi>h1{
+    display: inline-flex;
+    font-family: 'Homemade Apple', cursive;
+}
+.hi>a{
+    display: inline-flex;
+    margin: 0 20px;
+    padding: 0 20px;
+    font-size: 80px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+#stories{
+    display: inline-flex;
+}
+.story{
+    margin: 20px;
+    
+    border-radius: 10px;
+    font-family: 'Homemade Apple', cursive;
+}
+.story>a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.story>a :hover{
+    transform: translateY(-10px);
+}
+
+
+
+
