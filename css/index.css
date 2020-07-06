@@ -1,6 +1,8 @@
 body{
     background-color: black;
     color:white;
+    height: 100%;
+    margin: 0;
 
 }
 .hi{
@@ -9,11 +11,13 @@ body{
     align-items: center;
 }
 .bearimg{
+    margin: 0 0 0 10%;
     width:20%;
     height: auto;
     display: inline-flex;
 }
 .hi>h1{
+    margin: 0 5% 0 0;
     display: inline-flex;
     font-family: 'Homemade Apple', cursive;
 }
