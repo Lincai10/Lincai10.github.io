@@ -1,54 +1,126 @@
-body{
-    background-color: black;
-    color:white;
-    height: 100%;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Indie+Flower&display=swap');
 
-}
-.hi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bearimg{
-    margin: 0 0 0 10%;
-    width:20%;
-    height: auto;
-    display: inline-flex;
-}
-.hi>h1{
-    margin: 0 5% 0 0;
-    display: inline-flex;
-    font-family: 'Homemade Apple', cursive;
-}
-.hi>a{
-    display: inline-flex;
-    margin: 0 20px;
-    padding: 0 20px;
-    font-size: 80px;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-}
-#stories{
-    display: inline-flex;
-}
-.story{
-    margin: 20px;
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    background-color: #FEDCC8;
+
+  }
+  
+  .parallax {
+    -webkit-perspective: 100px;
+            perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin-left: -1500px;
+  }
+  .title{
+      font-family: 'Homemade Apple';
+      color: #2D112B;
+      position: absolute;
+      top:-550px;
+      left:10%;
+      transform: translateZ(-350px) scale(4.5);
+      animation-name:title;
+      animation-duration:5s;
+      animation-delay:1s;
+      animation-fill-mode:both;
+  }
+@keyframes title{
+        0%{
+            opacity: 0;
+            left:10%;
+            color: #2D112B;
+            
+        }
+        50%{
+            
+            left:30%;
+            color: #ffa216;
+        }
+        100%{
+            opacity: 1;
+            left:10%;
+            color: #2D112B;
+        }
+    }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .parallax__layer img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .parallax__cover {
+    background: #2D112B;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    z-index: 2;
+  }
+  
+  .parallax__layer__0 {
+    -webkit-transform: translateZ(-300px) scale(4);
+            transform: translateZ(-300px) scale(4);
+  }
+  
+  .parallax__layer__1 {
+    -webkit-transform: translateZ(-250px) scale(3.5);
+            transform: translateZ(-250px) scale(3.5);
+  }
+  
+  .parallax__layer__2 {
+    -webkit-transform: translateZ(-200px) scale(3);
+            transform: translateZ(-200px) scale(3);
+  }
+  
+  .parallax__layer__3 {
+    -webkit-transform: translateZ(-150px) scale(2.5);
+            transform: translateZ(-150px) scale(2.5);
+  }
+  
+  .parallax__layer__4 {
+    -webkit-transform: translateZ(-100px) scale(2);
+            transform: translateZ(-100px) scale(2);
+  }
+  
+  .parallax__layer__5 {
+    -webkit-transform: translateZ(-50px) scale(1.5);
+            transform: translateZ(-50px) scale(1.5);
+  }
+  
+  .parallax__layer__6 {
+    -webkit-transform: translateZ(0px) scale(1);
+            transform: translateZ(0px) scale(1);
+  }
+  #stb{
+      color: #fff;
+      font-family: 'Homemade Apple';
+      position: absolute;
+      top:15%;
+      left: 60%;
+      -webkit-transform: translateZ(-50px) scale(1.5);
+      transform: translateZ(-50px) scale(1.5);
+  }
+  }
     
-    border-radius: 10px;
-    font-family: 'Homemade Apple', cursive;
-}
-.story>a{
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-}
-.story>a :hover{
-    transform: translateY(-10px);
-}
-
-
-
-
+ 
