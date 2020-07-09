@@ -36,63 +36,7 @@
       animation-delay:1s;
       animation-fill-mode:both;
   }
-@keyframes title{
-        0%{
-            opacity: 0;
-            color: #2D112B;
-        }
-        50%{
-            
-            color: #ffa216;
-        }
-        100%{
-            opacity: 1;
-            
-            color: #2D112B;
-        }
-    }
-@media (max-width:2560px){
-        .title{
-            left:194%;
-    
-        }
-        #stb{
-            left:70%;
-    
-        }
-        
-    }
-@media (max-width:1440px){
-    .title{
-        left:240%;
 
-    }
-    #stb{
-        left:80%;
-
-    }
-}
-@media (max-width:765px){
-    .title{
-        left:260%;
-
-    }
-    #stb{
-        left:80%;
-
-    }
-}
-
-@media (max-width:425px){
-    .title{
-        left:265%;
-
-    }
-    #stb{
-        left:80%;
-
-    }
-}
   .parallax__layer {
     position: absolute;
     top: 0;
@@ -113,7 +57,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    height: 2000px;
+    height: 5000px;
     z-index: 2;
   }
   
@@ -156,11 +100,118 @@
       font-family: 'Homemade Apple';
       position: absolute;
       top:15%;
-      left: 70%;
+      left: 80%;
       width: 100%;
       -webkit-transform: translateZ(-50px) scale(1.5);
       transform: translateZ(-50px) scale(1.5);
   }
+  .profiol{
+      position: absolute;
+      width: 23%;
+      
+      margin: 0 auto;
+      color: #fff;
+      font-family: 'Homemade Apple';
   }
+  .fw1{
+    top: 20%;
+  }
+  .profior{
+    position: absolute;
+    width: 23%;
+    
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Homemade Apple';
+}
+.fw2{
+    top: 30%;
+}
+.bear{
+    top: 40%;
+}
+
+  @keyframes title{
+    0%{
+        opacity: 0;
+        color: #2D112B;
+    }
+    50%{
+        
+        color: #ffa216;
+    }
+    100%{
+        opacity: 1;
+        
+        color: #2D112B;
+    }
+}
+@media (max-width:2560px){
+    .title{
+        left:194%;
+
+    }
+    #stb,.profiol{
+        left:70%;
+
+    }
+    .profior{
+        left:16%;
+    }
+    
+}
+@media (max-width:1440px){
+.title{
+    left:240%;
+
+}
+#stb,.profiol{
+    left:80%;
+
+}
+.profior{
+    left:55%;
+}
+}
+@media (max-width:765px){
+.title{
+    left:260%;
+
+}
+#stb,.profiol{
+    left:80%;
+
+}
+.profior{
+    left:60%;
+}
+}
+
+@media (max-width:425px){
+.title{
+    left:265%;
+
+}
+#stb,.profiol{
+    left:80%;
+
+}
+.profior{
+    left:60%;
+}
+}
+@media (max-width:320px){
+.title{
+    left:265%;
+
+}
+#stb,.profiol{
+    left:80%;
+
+}
+.profior{
+    left:60%;
+}
+}
     
  
