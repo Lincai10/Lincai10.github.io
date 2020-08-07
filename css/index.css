@@ -120,3 +120,46 @@ body {
     line-height: 220px;
     font-size: 40px;
 }
+.enter{
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    background-color: #516aa1;
+    cursor: pointer;
+    margin: 50px 0;
+}
+.enter>a{
+    color: #fff;
+    text-decoration: none;
+}
+.enter:hover{
+    opacity: 0.5;
+}
+.about{
+    width: 800px;
+    margin: 250px auto;
+    text-align: center;
+}
+.ab_title{
+    margin: 0px auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.work{
+    width: 800px;
+   margin: 0 auto;
+    text-align: center;
+}
+.pic{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
