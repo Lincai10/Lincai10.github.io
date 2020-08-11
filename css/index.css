@@ -157,9 +157,11 @@ body {
 }
 .pic{
     width: 400px;
-    height: 600px;
     background-color: #fff;
     margin: 10px;
     position: relative;
     display: inline-block;
+}
+#fruit{
+    list-style: lower-greek;
 }

@@ -55,12 +55,13 @@
                      <h1 data-stellar-ratio="1.4" style="display: inline-block;position: relative; left:-190px;">ILLUSTRAR</h1>
                     </div>
                     <div  class="col-md-4 col-sm-12 pic">
-                     <h1>CREATER</h1>
+                     <h1>best books top</h1>
+                     <div id="book"></div>
                      <span data-stellar-ratio="1.2" style="display: inline-block;position: relative; left:-160px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
                     </div>
                     <div data-stellar-ratio="0.9" class="col-md-5 col-sm-12 pic" style="left: -480px;">
-                        <h1>CREATER</h1>
-                        <span data-stellar-ratio="1.2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
+                        <h1>fruits list</h1>
+                        <ul id="fruit"></ul>
                     </div>
                     
                 </div>
@@ -73,6 +74,76 @@
     $(document).ready(function () {
     $.stellar();
     });
+    var books_all =[
+    {
+        name: "little woman",
+        price: 350,
+        img:true,
+        url:"http://pic.eslite.com/Upload/Product/201911/m/637100084882797500.jpg"
+    },
+    {
+        name: "13 reasons why",
+        price: 400,
+        img:false,
+        url:"http://pic.eslite.com/Upload/Product/201911/m/637100084882797500.jpg"
+    },
+    {
+        name: "mosical",
+        price: 380,
+        img:false,
+        url:"http://pic.eslite.com/Upload/Product/201911/m/637100084882797500.jpg"
+    }
+    ]
+    books_all.push(
+    {
+        name: "tower",
+        price: 50,
+        img:false
+    },
+    {
+        name:"sony",
+        price: 600,
+        img:false
+    },
+    {
+        name:"magic ring",
+        price: 290,
+        img:false
+    },
+    {
+        name:"scare zoom",
+        price: 340,
+        img:false
+    }
+    )
+
+    for(var i=0;i<books_all.length;i++){
+    console.log(books_all[i].name+"是"+books_all[i].price+"元")
+    if(books_all.img){
+    $("#book").append("<h3>"+books_all[i].name+" is nt."+books_all[i].price+"</h3>"+"<img src="+books_all[i].url+">")   
+    }
+    else{
+    $("#book").append("<h3>"+books_all[i].name+" is nt."+books_all[i].price+"</h3>")   
+
+    }
+    }
+
+    var fruits = [
+        "waterlemon",
+        "banana",
+        "grava",
+        "peach",
+        "pineapple",
+        "strawberry",
+        "mango",
+        "grape",
+        "tomato",
+        "rasberry",
+        "orange"
+    ]
+    for(var i=0;i<fruits.length;i++){
+    $("#fruit").append("<li>"+fruits[i]+"</li>")
+    }
 </script>
 </body>
 </html>
