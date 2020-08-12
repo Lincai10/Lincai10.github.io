@@ -65,8 +65,8 @@
                     </div>
                     
                 </div>
-       </div>
-       
+            </div>
+            
     </div>
 <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
 <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
@@ -118,14 +118,14 @@
     )
 
     for(var i=0;i<books_all.length;i++){
-    console.log(books_all[i].name+"是"+books_all[i].price+"元")
-    if(books_all.img){
-    $("#book").append("<h3>"+books_all[i].name+" is nt."+books_all[i].price+"</h3>"+"<img src="+books_all[i].url+">")   
-    }
-    else{
-    $("#book").append("<h3>"+books_all[i].name+" is nt."+books_all[i].price+"</h3>")   
-
-    }
+        console.log(books_all[i].name+"是"+books_all[i].price+"元");
+        
+        if(books_all[i].img==true){
+            $("#book").append("<h3>"+books_all[i].name+" is nt."+books_all[i].price+"</h3>"+"<img src="+books_all[i].url+">");   
+        }
+        else{
+            $("#book").append("<h3>"+books_all[i].name+" is nt."+books_all[i].price+"</h3>");   
+        }
     }
 
     var fruits = [
