@@ -32,41 +32,54 @@
         <div id="aboutA" class="about">
             <h1 class="ab_title ab1" style="margin-bottom: 20px;color: azure;"> ABOUT ME</h1>
             <div  class="work flex-row d-flex justify-content-center">
-                <div data-stellar-ratio="0.9" class="col-md-5 col-sm-12 pic">
+                <div class="col-md-5 col-sm-12 pic">
                   <h1>CREATER</h1>
-                  <span data-stellar-ratio="1.2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
+                  <span >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
                 </div>
                 <div class="col-md-4 col-sm-12 pic">
-                 <span data-stellar-ratio="1.2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
-                 <h1 data-stellar-ratio="1.4" style="display: inline-block;position: relative; left:-190px;">ILLUSTRAR</h1>
+                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
+                 <h1  style="display: inline-block;position: relative;">ILLUSTRAR</h1>
                 </div>
                 <div  class="col-md-4 col-sm-12 pic">
                  <h1>CREATER</h1>
-                 <span data-stellar-ratio="1.2" style="display: inline-block;position: relative; left:-160px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
+                 <span  style="display: inline-block;position: relative; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
                 </div>
                 
             </div>
             <div id="profioA" class="about">
                 <h1 class="ab_title ab1" style="margin-bottom: 20px;color: azure;"> PROFIO</h1>
                 <div  class="work flex-row d-flex justify-content-center">
-                    
                     <div class="col-md-4 col-sm-12 pic">
-                     <span data-stellar-ratio="1.2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
-                     <h1 data-stellar-ratio="1.4" style="display: inline-block;position: relative; left:-190px;">ILLUSTRAR</h1>
+                       
+                        <h1  style="display: inline-block;position: relative;">form</h1>
+                        <table id="drink" width="250" border="5" style="border:3px#516aa1 dashed;color: #516aa1;">
+                            　<tr>
+                                <td>
+                                    item name
+                                </td>
+                                <td>
+                                    price(NT)
+                                </td>
+                                <td>
+                                    hothot(kcal)
+                                </td>
+                            </tr>
+                        </table>
+                        <span >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
                     </div>
                     <div  class="col-md-4 col-sm-12 pic">
-                     <h1>best books top</h1>
-                     <div id="book"></div>
-                     <span data-stellar-ratio="1.2" style="display: inline-block;position: relative; left:-160px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
+                        <h1>best books top</h1>
+                        <div id="book"></div>
+                        <span  style="display: inline-block;position: relative;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
                     </div>
-                    <div data-stellar-ratio="0.9" class="col-md-5 col-sm-12 pic" style="left: -480px;">
+                    <div class="col-md-5 col-sm-12 pic" style="">
                         <h1>fruits list</h1>
                         <ul id="fruit"></ul>
                     </div>
                     
                 </div>
             </div>
-            
+           
     </div>
 <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
 <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
@@ -143,6 +156,31 @@
     ]
     for(var i=0;i<fruits.length;i++){
     $("#fruit").append("<li>"+fruits[i]+"</li>")
+    }
+    var drinks=[
+        {
+            name:"cola",
+            price: 50,
+            kcal:300
+        },
+        {
+            name:"tea",
+            price: 100,
+            kcal:70
+        },
+        {
+            name:"coffee",
+            price: 150,
+            kcal:40
+        },
+        {
+            name:"milk",
+            price: 100,
+            kcal:90
+        },
+    ]
+    for(var i=0;i<drinks.length;i++){
+        $("#drink").append("<tr><td>"+drinks[i].name+"</td><td>"+drinks[i].price+"</td><td>"+drinks[i].kcal+"</td><tr/>")
     }
 </script>
 </body>
