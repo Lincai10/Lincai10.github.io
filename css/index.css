@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,220 +8,31 @@
 html,
 body {
     width: 100%;
-    background-color: #516aa1;
-    
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Montserrat';
 }
-.wave{
-    width: 800px;
-    height: 300px;
-    color: white;
-    text-align: center;
-    margin:0 auto;
-    overflow: hidden;
-    border-radius: 50%;
-    transition: all 1s;
+.navbar{
+background-color: rgb(247, 229, 169);
 }
-.title{
-    margin-top: 125px;
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.fish{
-    width: 800px;
-    height: 100px;
-    font-size: 50px;
-    color: #ffffff;
-    position: absolute;
-    bottom: -10px;
-    
-}
-.f1{
-    animation: fish 1s infinite ;
-    transition: all 1s;
-}
-.f2{
-    animation: fish 1s infinite ;
-    animation-delay: 0.3s;
-    transition: all 1s;
-}
-.f3{
-    animation: fish 1s infinite ;
-    animation-delay: 0.7s;
-    transition: all 1s;
-}
-
-.wave::before{
-    content: "";
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    background-color: white;
-    border-radius: 300px;
-    top:250px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: wave 5s infinite linear;
-    transition: all 1s;
-}
-
-@keyframes wave{
-    0%{
-        transform: translateX(-50%) rotate(0deg);
-    }
-    100%{
-        transform: translateX(-50%) rotate(360deg);
-    }
-}
-@keyframes fish{
-    0%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform:  rotate(20deg);
-    }
-    100%{
-        transform:  rotate(0deg);
-    }
-}
-.wave:hover{
-    color: #516aa1;
- 
-}
-.wave:hover::before{
-    top:80px;
-}
-.wave:hover>.col>.fish{
-    bottom: 20px;
-    font-size: 60px;
-    color: #516aa1;
-}
-.menu{
-    width: 800px;
-    margin: 50px auto;
-    text-align: center;
-}
-.menu-btn{
+.navbar li{
     display: inline-block;
-    color: #516aa1;
-    text-decoration: none;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    font-size: 30px;
-    background-color: #fff;
+    margin: 0;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
     transition: all 0.5s;
 }
-.menu-btn:hover{
-    background-color: #516aa1;
-    color: #fff;
-    width: 220px;
-
-    line-height: 220px;
-    font-size: 40px;
+.navbar li:hover{
+    background-color: rgb(255, 255, 255);
 }
-.enter{
-    width: 200px;
-    padding: 10px;
-    position: absolute;
-    left: 50%;
-    border: 3px solid #fff;
-    border-radius: 20px;
-    transform: translateX(-50%);
-    background-color: #516aa1;
-    cursor: pointer;
-    margin: 50px 0;
-}
-.enter>a{
-    color: #fff;
+.navbar li a{
+    color: rgb(92, 90, 90);
     text-decoration: none;
-}
-.enter:hover{
-    opacity: 0.5;
-}
-.about{
-    width: 800px;
-    margin: 250px auto;
-    text-align: center;
-}
-.ab_title{
-    margin: 0px auto;
-    text-align: center;
-    display: inline-block;
-}
-
-.work{
-    width: 800px;
-   margin: 0 auto;
-    text-align: center;
-}
-.pic{
-    width: 400px;
-    background-color: #fff;
-    margin: 20px;
-    position: relative;
-    display: inline-block;
-}
-#fruit{
-    list-style: lower-greek;
-}
-
-/*<-page2->*/
-
-#tag, #tag>li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.abgne_tab {
-	clear: left;
-	width: 400px;
-	margin: 10px 0;
-}
-ul.tabs {
-	width: 100%;
-	height: 32px;
-	border-bottom: 1px solid #999;
-	border-left: 1px solid #999;
-}
-ul.tabs li {
-	float: left;
-	height: 31px;
-	line-height: 31px;
-	overflow: hidden;
-	position: relative;
-	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
-	border: 1px solid #999;
-	border-left: none;
-	background: #e1e1e1;
-}
-ul.tabs li a {
-	display: block;
-	padding: 0 20px;
-	color: #000;
-	border: 1px solid #fff;
-	text-decoration: none;
-}
-ul.tabs li a:hover {
-	background: #ccc;
-}
-ul.tabs li.active  {
-	background: #fff;
-	border-bottom: 1px solid#fff;
-}
-ul.tabs li.active a:hover {
-	background: #fff;
-}
-div.tab_container {
-	clear: left;
-	width: 100%;
-	border: 1px solid #999;
-	border-top: none;
-	background: #fff;
-}
-div.tab_container .tab_content {
-	padding: 20px;
-}
-div.tab_container .tab_content h2 {
-	margin: 0 0 20px;
 }

@@ -6,182 +6,31 @@
     <title>Lincai</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap-4.5.0-dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-4.5.0-dist/js/bootstrap.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
-    <div id="index" class="container">
-        <div class="flex-row wave d-flex justify-content-center">
-            <div class="col">
-                <h1 class="title">YI LIN,TSAI</h1>
-                <div class="fish">
-                    <i class="fas fa-fish f1"></i>
-                    <i class="fas fa-fish f2"></i>
-                    <i class="fas fa-fish f3"></i>
-                </div>
+    <!-- header -->
+    <header>
+        <div class="header container">
+            <div class="logo float-left">
+                <img src="img/lin_logo.png" alt="">
+            </div>
+            <div class="social float-right"></div>
+        </div>
+        <div class="navbar">
+            <div class="container d-flex justify-content-between">
+                <ul>
+                    <li><a href="https://lincai10.github.io/">Home</a></li>
+                    <li><a href="https://lincai10.github.io/artworks">Artworks</a></li>
+                    <li><a href="https://lincai10.github.io/selection">Selection</a></li>
+                    <li><a href="https://lincai10.github.io/about">About</a></li>
+                </ul>
             </div>
         </div>
-        <div class="menu">
-            <div class="row">
-                <div class="col-md-4 col-sm-12"><a class="menu-btn"href="#aboutA">AboutMe</a></div>   
-                <div class="col-md-4 col-sm-12"><a class="menu-btn"href="#profioA">Profio</a></div>
-                <div class="col-md-4 col-sm-12"><a class="menu-btn"href="">Contact</a></div>
-            </div>
-            <button class="enter"><a href="">Enter</a></button>
-        </div>
-        <div id="aboutA" class="about">
-            <h1 class="ab_title ab1" style="margin-bottom: 20px;color: azure;"> ABOUT ME</h1>
-            <div  class="work flex-row d-flex justify-content-center">
-                <div class="col-md-5 col-sm-12 pic">
-                  <h1>CREATER</h1>
-                  <span >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
-                </div>
-                <div class="col-md-4 col-sm-12 pic">
-                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
-                 <h1  style="display: inline-block;position: relative;">ILLUSTRAR</h1>
-                </div>
-                <div  class="col-md-4 col-sm-12 pic">
-                 <h1>CREATER</h1>
-                 <span  style="display: inline-block;position: relative; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
-                </div>
-                
-            </div>
-            <div id="profioA" class="about">
-                <h1 class="ab_title ab1" style="margin-bottom: 20px;color: azure;"> PROFIO</h1>
-                <div  class="work flex-row d-flex justify-content-center">
-                    <div class="col-md-4 col-sm-12 pic">
-                       
-                        <h1  style="display: inline-block;position: relative;">form</h1>
-                        <table id="drink" width="250" border="5" style="border:3px#516aa1 dashed;color: #516aa1;">
-                            　<tr>
-                                <td>
-                                    item name
-                                </td>
-                                <td>
-                                    price(NT)
-                                </td>
-                                <td>
-                                    hothot(kcal)
-                                </td>
-                            </tr>
-                        </table>
-                        <span >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
-                    </div>
-                    <div  class="col-md-4 col-sm-12 pic">
-                        <h1>best books top</h1>
-                        <div id="book"></div>
-                        <span  style="display: inline-block;position: relative;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptas.</span>
-                    </div>
-                    <div class="col-md-5 col-sm-12 pic" style="">
-                        <h1>fruits list</h1>
-                        <ul id="fruit"></ul>
-                    </div>
-                    
-                </div>
-            </div>
-           
-    </div>
+    </header>
+    <!-- banner -->
+    
 <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
-<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-<script>
-    $(document).ready(function () {
-    $.stellar();
-    });
-    var books_all =[
-    {
-        name: "little woman",
-        price: 350,
-        img:true,
-        url:"http://pic.eslite.com/Upload/Product/201911/m/637100084882797500.jpg"
-    },
-    {
-        name: "13 reasons why",
-        price: 400,
-        img:false,
-        url:"http://pic.eslite.com/Upload/Product/201911/m/637100084882797500.jpg"
-    },
-    {
-        name: "mosical",
-        price: 380,
-        img:false,
-        url:"http://pic.eslite.com/Upload/Product/201911/m/637100084882797500.jpg"
-    }
-    ]
-    books_all.push(
-    {
-        name: "tower",
-        price: 50,
-        img:false
-    },
-    {
-        name:"sony",
-        price: 600,
-        img:false
-    },
-    {
-        name:"magic ring",
-        price: 290,
-        img:false
-    },
-    {
-        name:"scare zoom",
-        price: 340,
-        img:false
-    }
-    )
-
-    for(var i=0;i<books_all.length;i++){
-        console.log(books_all[i].name+"是"+books_all[i].price+"元");
-        
-        if(books_all[i].img==true){
-            $("#book").append("<h3>"+books_all[i].name+" is nt."+books_all[i].price+"</h3>"+"<img src="+books_all[i].url+">");   
-        }
-        else{
-            $("#book").append("<h3>"+books_all[i].name+" is nt."+books_all[i].price+"</h3>");   
-        }
-    }
-
-    var fruits = [
-        "waterlemon",
-        "banana",
-        "grava",
-        "peach",
-        "pineapple",
-        "strawberry",
-        "mango",
-        "grape",
-        "tomato",
-        "rasberry",
-        "orange"
-    ]
-    for(var i=0;i<fruits.length;i++){
-    $("#fruit").append("<li>"+fruits[i]+"</li>")
-    }
-    var drinks=[
-        {
-            name:"cola",
-            price: 50,
-            kcal:300
-        },
-        {
-            name:"tea",
-            price: 100,
-            kcal:70
-        },
-        {
-            name:"coffee",
-            price: 150,
-            kcal:40
-        },
-        {
-            name:"milk",
-            price: 100,
-            kcal:90
-        },
-    ]
-    for(var i=0;i<drinks.length;i++){
-        $("#drink").append("<tr><td>"+drinks[i].name+"</td><td>"+drinks[i].price+"</td><td>"+drinks[i].kcal+"</td><tr/>")
-    }
-</script>
+<script type="text/javascript" src="css/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
 </body>
 </html>
