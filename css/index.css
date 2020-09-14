@@ -36,3 +36,62 @@ background-color: rgb(247, 229, 169);
     color: rgb(92, 90, 90);
     text-decoration: none;
 }
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/linbg.png) ;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.banner h1{
+    display: inline-block;
+    margin: 200px auto 0 auto;
+    font-weight: 600;
+    color: white;
+}
+.banner .btn{
+    border: 3px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    width: 15rem;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    transition: all 0.5s;
+}
+.banner .btn:hover{
+    background-color: rgba(256,256,256,0.5);
+}
+.info{
+    padding: 5rem 0;
+}
+.best{
+    margin: 5rem;
+}
+.best .item{
+    margin: 1rem 0;
+    text-align: center;
+}
+.best .item img{
+    width: 100%;
+}
+.best .item a{
+    display: inline-block;
+    width: 100px;
+    padding: .5rem;
+    background-color: tomato;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffff;
+    cursor: pointer;
+    border: 2px solid tomato;
+}
+.best .item a:hover{
+    background-color: white;
+
+    color: tomato;
+}

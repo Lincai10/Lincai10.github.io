@@ -28,9 +28,67 @@
             </div>
         </div>
     </header>
-    <!-- banner -->
+     <!-- banner -->
+    <div class="banner">
+        <h1>ALL DREAM COMES TRUE.</h1>
+       <div class="btn">SHOP ALL</div>
+    </div>
+    <!-- container -->
+    <div class="container">
+        <div class="info">
+            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsa corrupti adipisci id? Ab, alias iure ducimus ut, maiores delectus at assumenda obcaecati minus optio doloribus ad harum minima quidem adipisci ipsa velit voluptates id praesentium? Dolor neque eveniet non corporis architecto quam quidem error! Blanditiis expedita neque ipsum qui.</h4>
+        </div>
+    </div>
+    <div class="banner">
+        <h1>ALL DREAM COMES TRUE.</h1>
+       <div class="btn">SHOP ALL</div>
+    </div>
+    <div class="container">
+       <h1>BEST SALE</h1>
+       <div id="best" class="row best">
+           <div class="col-3 item">
+               <img src="img/pink.png" alt="">
+               <h4>NO1</h4>
+               <a href="#">buy</a>
+           </div>
+        </div>
+       </div>
+    </div>
+    <div class="banner">
+        <h1>ALL DREAM COMES TRUE.</h1>
+       <div class="btn">SHOP ALL</div>
+    </div>
     
 <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
 <script type="text/javascript" src="css/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+<script>
+    var product=[
+        {no:"NO2",
+        img:"img/blue.png",
+        },
+        {no:"NO3",
+        img:"img/green.png",
+        },
+        {no:"NO4",
+        img:"img/pink.png",
+        },
+        {no:"NO5",
+        img:"img/blue.png",
+        },
+        {no:"NO6",
+        img:"img/green.png",
+        },
+        {no:"NO7",
+        img:"img/pink.png",
+        },
+        {no:"NO8",
+        img:"img/blue.png",
+        }
+    ]
+    for(var i=0;i<product.length;i++){
+        $("#best").append("<div class='col-3 item'><img src="+product[i].img+"><h4>"+product[i].no+"</h4><a href='#'>buy</a>")
+        }
+    
+</script>
 </body>
 </html>
