@@ -61,16 +61,33 @@
        <div class="btn">SHOP ALL</div>
     </div>
     <!-- container -->
-    <div class="container mt-5">
-       <h1 class="text-center">BEST SALE</h1>
-       <div id="best" class="row best">
-           <div class="col-12 item col-md-6 col-lg-3">
-               <img src="img/pink.png" alt="">
-               <h4>NO1</h4>
-               <a href="#">DETAIL</a>
-           </div>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="img/pink.png" alt="" width="100%">
+            </div>
+            <div class="col-12 col-md-6">
+                <h3>NO1</h3>
+                <h4>$100</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt modi labore delectus pariatur molestiae error est beatae, provident, officia blanditiis voluptate similique corrupti cupiditate debitis fuga deserunt. Beatae, qui ullam.</p>
+                <hr>
+                <br>
+                <ul>
+                    <li>100%nature</li>
+                    <li>30,50,100ml</li>
+                    <li>no package</li>
+                    <li>4*4*3cm</li>
+                </ul>
+                <select class="form-control form-control-lg">
+                    <option selected>Choose...</option>
+                    <option>30ml</option>
+                    <option>50ml</option>
+                    <option>100ml</option>
+                  </select>
+                <button type="button" class="btn btn-outline-warning btn-lg mt-5"> Add to Cart</button>
+            </div>
+
         </div>
-       </div>
     </div>
     <!---footer-->
     <footer>
@@ -138,7 +155,7 @@
         }
     ]
     for(var i=0;i<product.length;i++){
-        $("#best").append("<div class='col-12 item col-md-6 col-lg-3'><img src="+product[i].img+"><h4>"+product[i].no+"</h4><a href='https://lincai10.github.io/detail'>DETAIl</a>")
+        $("#best").append("<div class='col-12 item col-md-6 col-lg-3'><img src="+product[i].img+"><h4>"+product[i].no+"</h4><a href='#'>DETAIl</a>")
         }
     //  一進入畫面時收合選單
     $(".cata").slideUp(0);
