@@ -174,3 +174,16 @@ body {
 #stickers span{
     color: gray;
 }
+
+/* detail */
+
+.detail{
+    margin:80px 0 ;
+}
+.detail .card-title{
+    font-family: 'Abril Fatface';
+
+}
+.detail .form-group{
+    margin-top: 80px;
+}
