@@ -47,7 +47,7 @@ body {
     height: 480px;
     background-color: black;
     background-image: url(../img/earth.png) ;
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     text-align: center;
 }
@@ -78,6 +78,33 @@ body {
     font-family: 'Abril Fatface';
 
 }
+.pos-banner{
+    width: 100%;
+    
+    background-color: rgb(209, 209, 209);
+}
+.pos-banner .card{
+    background-color: rgb(209, 209, 209);
+    border: none;
+    color: white;
+    padding: 100px 0;
+}
+.pos-banner .card .card-title{
+    font-family: 'Abril Fatface';
+    letter-spacing: 2px;
+}
+.pos-banner .greenfish{
+    margin-top: 40px;
+}
+.cal-banner .blueowl{
+    margin-bottom: 40px;
+}
+.cal-banner .card{
+    border: none;
+   
+    padding: 100px 0;
+}
+
 .best{
     margin: 4rem;
 }
