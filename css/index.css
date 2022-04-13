@@ -193,3 +193,23 @@ body {
     color: white;
     margin-bottom: 20px;
 }
+#story .carousel-inner{
+    border-radius: 50%;
+    background-color: black;
+  
+}
+#story .carousel-inner .carousel-caption{
+    background-color: rgba(255,255,255,0.5);
+    bottom: 145px;
+    color: black;
+    opacity: 0;
+}
+#story .carousel-inner .carousel-caption:hover{
+    opacity: 1;
+
+}
+#story .carousel-inner .carousel-caption h5{
+    font-family: 'Abril Fatface';
+
+}
+
