@@ -143,11 +143,7 @@ body {
 .footer-link{
     color: rgb(155, 155, 155);
 }
-@media (max-width:576px){
-    .banner h2{
-        font-size:20px ;
-    }
-}
+
 
 
 /* stickers */
@@ -187,11 +183,16 @@ body {
     font-family: 'Abril Fatface';
 }
 /* story */
+#story{
+    margin-top: 80px;
+}
 .story-tit{
     padding: 8px 0;
     background-color: black;
     color: white;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    margin: 0 30px 20px 30px;
 }
 #story .carousel-inner{
     border-radius: 50%;
@@ -211,5 +212,35 @@ body {
 #story .carousel-inner .carousel-caption h5{
     font-family: 'Abril Fatface';
 
+}
+
+
+/* candle */
+#candle{
+    margin-top: 80px;
+}
+.candle-tit{
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+}
+.candle-info{
+    margin: 32px 0;
+    text-align: center;
+}
+
+
+@media (max-width:576px){
+    .banner h2{
+        font-size:20px ;
+    }
+    .story-tit{
+        margin: 0 0 20px 0;
+    }
+}
+@media (min-width:768px){
+    .story-tit{
+        margin: 0 50px 20px 50px;
+    }
 }
 
