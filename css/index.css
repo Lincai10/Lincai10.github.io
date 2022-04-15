@@ -61,6 +61,8 @@ body {
     margin: 50px auto 0 auto;
     color: white;
     letter-spacing: 1px;
+    font-family: 'Abril Fatface';
+
 }
 .banner h2{
     color: white;
@@ -68,7 +70,9 @@ body {
     margin: 320px 0;
     text-align: center;
     transition: all 1s;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-family: 'Abril Fatface';
+
 }
 #collections{
     padding: 80px 0;
@@ -151,13 +155,10 @@ body {
     padding: 80px 0;
 }
 #stickers h3{
-    font-family: 'Abril Fatface';
     margin-bottom: 24px;
-    
 }
 #stickers .card-title{
     font-family: 'Abril Fatface';
-
 }
 #stickers .card{
     text-align: center;
