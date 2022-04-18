@@ -246,3 +246,32 @@ body {
     }
 }
 
+/* postcards */
+#postcards{
+    margin-top: 80px;
+}
+
+#postcards .tg-bg{
+    background-color: #ad6f67;
+}
+
+#postcards .bf-bg{
+    background-color: #eccbcb;
+}
+
+#postcards .sl-bg{
+    background-color: #f8da87;
+}
+#postcards .mo-bg{
+    background-color: #c6d3bd;
+}
+
+#postcards .fh-bg{
+    background-color: #606e55;
+}
+#postcards .ray-bg{
+    background-color:#ccd4e5;
+}
+#postcards .sk-bg{
+    background-color: #53a5d6;
+}
