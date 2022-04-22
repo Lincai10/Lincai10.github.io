@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap');
+@import 'animate.css'
 
 * {
     box-sizing: border-box;
@@ -69,10 +70,9 @@ body {
     padding: 1rem 3rem;
     margin: 320px 0;
     text-align: center;
-    transition: all 1s;
     letter-spacing: 3px;
     font-family: 'Abril Fatface';
-
+    animation-delay: 1s;
 }
 #collections{
     padding: 80px 0;
@@ -95,9 +95,20 @@ body {
 }
 .pos-banner .greenfish{
     margin-top: 40px;
+    animation: shakeX;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+    animation-delay: 1s;
 }
 .cal-banner .blueowl{
     margin-bottom: 40px;
+    animation: shakeX;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+    animation-delay: 2s;
+    animation-direction: reverse;
 }
 .cal-banner .card{
     border: none;
@@ -247,12 +258,33 @@ body {
 }
 
 /* postcards */
+.ml11 {
+    font-weight: 700;
+  }
+  
+  .ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
 #postcards{
     margin-top: 80px;
 }
 
 #postcards .tg-bg{
     background-color: #ad6f67;
+}
+#postcards .tg-bg:hover{
+    animation: headShake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 #postcards .bf-bg{
