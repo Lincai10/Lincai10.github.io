@@ -318,3 +318,17 @@ body {
 #calendar .cal-pic:hover{
     transform: rotate3d(0, 1, 0, -20deg);
 }
+
+/* faq */
+#faq{
+    padding: 80px 0;
+}
+#faq #accordionExample .card{
+    border: none;
+}
+
+#faq #accordionExample .card .card-header{
+    background-color: #ffffff;
+    border: none;
+    padding: .75rem 0;
+}
