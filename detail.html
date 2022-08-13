@@ -27,12 +27,12 @@
             <div class="container">
                 <ul class="nav nav-pills d-flex justify-content-between">
                     <li class="nav-item">
-                      <a class="nav-link " href="#">HOME</a>
+                      <a class="nav-link " href="https://lincai10.github.io">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SHOPS</a>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">CALENDAR</a>
+                        <a class="dropdown-item" href="https://lincai10.github.io/calendar">CALENDAR</a>
                         <a class="dropdown-item" href="https://lincai10.github.io/stickers">STICKERS</a>
                         <a class="dropdown-item" href="https://lincai10.github.io/postcards">POSTCARDS</a>
                         <div class="dropdown-divider"></div>
@@ -40,11 +40,73 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="https://lincai10.github.io/story">STORY</a>
+                     
+                      <button type="button" class="btn " data-toggle="modal" data-target="#cart" data-whatever=""> <img src="img/shopping-cart.png" style="width: 25px"></button>
+                        <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="cartLabel">YOUR CART</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                <ul id="cart-list">
+                                  <li id="cart-empty">your cart is empty!</li>
+                                  <!-- <li id="cart-item"class="d-flex">
+                                    <div class="col-3">
+                                      <img src="https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52" alt="" class="w-100">
+                                    </div>
+                                    <div class="col-6">
+                                      sticker.011 - ButterFly
+                                    </div>
+                                    <div class="col-3">
+                                      40
+                                    </div>
+                                  </li> -->
+                                  
+                                </ul>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
+                                  <button type="button" class="btn btn-outline-dark" onClick="sendMail()">Checkout</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                      </li>
+                        <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@mrs.chippy">CONTACT</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form>
+                                    <div class="form-group">
+                                      <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                      <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="message-text" class="col-form-label">Message:</label>
+                                      <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-outline-dark" onClick="sendMail()">Send message</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </li>
                   </ul>
             </div>
         </div>
@@ -98,7 +160,7 @@
                                   <option>5</option>
                                 </select>
                               </div>
-                            <a href="https://lincai10.github.io/detail" class="btn btn-block btn-outline-dark">Add to Cart</a>
+                            <a href="#" class="btn btn-block btn-outline-dark" onClick="addtoCart()">Add to Cart</a>
                             <hr>
                             <div class="d-flex">
                                 <div class="col-6">
@@ -163,7 +225,7 @@
                   <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Email address" aria-label="username" aria-describedby="button-addon2">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
+                      <button class="btn btn-outline-secondary changetext" type="button" id="button-addon2" onClick="changeText()">Send</button>
                     </div>
                   </div>
                 </div>
@@ -230,6 +292,10 @@
 
 <script>
     var product=[
+        {no:"sticker.011",
+        img:"https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52",
+        name:"ButterFly",
+        },
         {no:"sticker.012",
         img:"https://cf.shopee.tw/file/5347aada760040b461e9446851154225",
         name:"Acorns",
@@ -239,7 +305,7 @@
         name:"Mushrooms 1",
         },
     ]
-    for(var i=0;i<product.length;i++){
+    for(var i=1;i<product.length;i++){
         $("#sticker-list").append("<div class='col mb-4'><div class='card'><img src="+product[i].img+" class='card-img-top' alt='...'><div class='card-body'><span>"+product[i].no+"</span><h4 class='card-title'>"+product[i].name+"</h4><p class='card-text'>Hand drawing matter sticker.</p><h5 class='card-title'>NT.40</h5></div><div class='card-footer'><a href='https://shopee.tw/%E6%A0%97%E9%BC%A0%E5%A4%AB%E4%BA%BA-%E6%8F%92%E7%95%AB%E8%B2%BC%E7%B4%99(%E9%9C%A7%E9%9D%A2%E7%99%BD%E5%BA%95)-i.340395024.13001057697?sp_atk=a9a79826-5b44-405a-8349-dfccd31ba55d' class='btn btn-block btn-outline-dark'>See Details</a></div>")
         }
     //  一進入畫面時收合選單
@@ -264,7 +330,32 @@
         })
     }
     $('.dropdown-toggle').dropdown()
+
+    // contact
+    $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-body input').val(recipient)
+})
+    //sendMail
+    function sendMail(){
+        window.open("mailto:mrs.chippy99@gmail.com");
+    }
+    //changeText
+    function changeText(){
+        document.querySelector(".changetext").textContent = "Thank you :)";
+        console.log('you get a new follow!')
+    }
  
+    //cart
+    function addtoCart(){
+      $("#cart-list").append("<li class='d-flex'><div class='col-3'><img src='https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52' class='w-100'></div><div class='col-6'>sticker.011 - ButterFly</div><div class='col-3'>40</div></li>");
+      $("#cart-empty").hide();
+    }
 </script>
 </body>
 </html>
