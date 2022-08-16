@@ -43,8 +43,36 @@
                       <a class="nav-link" href="https://lincai10.github.io/story">STORY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                      </li>
+                      <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@mrs.chippy">CONTACT</button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline-dark" onClick="sendMail()">Send message</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </li>
                   </ul>
             </div>
         </div>
@@ -152,7 +180,7 @@
                   <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Email address" aria-label="username" aria-describedby="button-addon2">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
+                      <button class="btn btn-outline-secondary changetext" type="button" id="button-addon2" onClick="changeText()">Send</button>
                     </div>
                   </div>
                 </div>
@@ -241,6 +269,26 @@
         })
     }
     $('.dropdown-toggle').dropdown()
+    // contact
+$('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-body input').val(recipient)
+})
+    //sendMail
+    function sendMail(){
+        window.open("mailto:mrs.chippy99@gmail.com");
+    }
+    //changeText
+    function changeText(){
+        document.querySelector(".changetext").textContent = "Thank you :)";
+        console.log('you get a new follow!')
+    }
+  
  
 </script>
 </body>

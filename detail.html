@@ -52,8 +52,9 @@
                                   </button>
                                 </div>
                                 <div class="modal-body">
+                                <h5 id="cart-empty">your cart is empty!</h5>
                                 <ul id="cart-list">
-                                  <li id="cart-empty">your cart is empty!</li>
+                                  
                                   <!-- <li id="cart-item"class="d-flex">
                                     <div class="col-3">
                                       <img src="https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52" alt="" class="w-100">
@@ -243,10 +244,10 @@
                             <a href="" class="footer-link">E-GIFT CARDS</a>
                         </li>
                         <li>
-                            <a href="" class="footer-link">FAQS</a>
+                            <a href="https://lincai10.github.io/faq" class="footer-link">FAQS</a>
                         </li>
                         <li>
-                            <a href="" class="footer-link">SHIPPING & RETURN</a>
+                            <a href="https://lincai10.github.io/faq" class="footer-link">SHIPPING & RETURN</a>
                         </li>
                    </ul>
                </div>
@@ -260,7 +261,7 @@
                             <a href="https://shopee.tw/mrs.chippy?categoryId=100636&itemId=7063875582" class="footer-link">STORIES</a>
                         </li>
                         <li>
-                            <a href="" class="footer-link">CAREERS</a>
+                            <a href="https://lincai10.github.io/faq" class="footer-link">CAREERS</a>
                         </li>
                      </ul>
                 </div>
@@ -352,9 +353,15 @@
     }
  
     //cart
+    
     function addtoCart(){
-      $("#cart-list").append("<li class='d-flex'><div class='col-3'><img src='https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52' class='w-100'></div><div class='col-6'>sticker.011 - ButterFly</div><div class='col-3'>40</div></li>");
+      $("#cart-list").append("<li class='row cart-item'><div class='col-3'><img src='https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52' class='w-100'></div><div class='col-3'>sticker.011 - ButterFly</div><div class='col-3'>40</div><div class='col-3'><button id='cancel' type='button' class='btn btn-light' onClick='Cancel()' >-</button></div></li>");
       $("#cart-empty").hide();
+    }
+    //
+    function Cancel(){
+      $("li.cart-item").hide();
+      $("#cart-empty").show();
     }
 </script>
 </body>
