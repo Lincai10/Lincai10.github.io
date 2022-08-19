@@ -71,7 +71,7 @@
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
-                                  <button type="button" class="btn btn-outline-dark" onClick="sendMail()">Checkout</button>
+                                  <button type="button" class="btn btn-outline-dark">Checkout</button>
                                 </div>
                               </div>
                             </div>
@@ -153,15 +153,15 @@
                             <h5 class="card-title">NT.40</h5>
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1 "class="card-title">QTY</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
+                                <select class="custom-select" id="qty">
+                                  <option value="1" >1</option>
+                                  <option value="2">2</option>
+                                  <option value="3" selected>3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
                                 </select>
                               </div>
-                            <a href="#" class="btn btn-block btn-outline-dark" onClick="addtoCart()">Add to Cart</a>
+                            <a href="#" class="btn btn-block btn-outline-dark" onClick="addtoCart(product)">Add to Cart</a>
                             <hr>
                             <div class="d-flex">
                                 <div class="col-6">
@@ -296,18 +296,21 @@
         {no:"sticker.011",
         img:"https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52",
         name:"ButterFly",
+        price:40,
         },
         {no:"sticker.012",
         img:"https://cf.shopee.tw/file/5347aada760040b461e9446851154225",
         name:"Acorns",
+        price:40,
         },
         {no:"sticker.013",
         img:"https://cf.shopee.tw/file/069c048ff5bb8b695ae6ed630d2d8225",
         name:"Mushrooms 1",
+        price:40,
         },
     ]
     for(var i=1;i<product.length;i++){
-        $("#sticker-list").append("<div class='col mb-4'><div class='card'><img src="+product[i].img+" class='card-img-top' alt='...'><div class='card-body'><span>"+product[i].no+"</span><h4 class='card-title'>"+product[i].name+"</h4><p class='card-text'>Hand drawing matter sticker.</p><h5 class='card-title'>NT.40</h5></div><div class='card-footer'><a href='https://shopee.tw/%E6%A0%97%E9%BC%A0%E5%A4%AB%E4%BA%BA-%E6%8F%92%E7%95%AB%E8%B2%BC%E7%B4%99(%E9%9C%A7%E9%9D%A2%E7%99%BD%E5%BA%95)-i.340395024.13001057697?sp_atk=a9a79826-5b44-405a-8349-dfccd31ba55d' class='btn btn-block btn-outline-dark'>See Details</a></div>")
+        $("#sticker-list").append("<div class='col mb-4'><div class='card'><img src="+product[i].img+" class='card-img-top' alt='...'><div class='card-body'><span>"+product[i].no+"</span><h4 class='card-title'>"+product[i].name+"</h4><p class='card-text'>Hand drawing matter sticker.</p><h5 class='card-title'>NT."+product[i].price+"</h5></div><div class='card-footer'><a href='https://shopee.tw/%E6%A0%97%E9%BC%A0%E5%A4%AB%E4%BA%BA-%E6%8F%92%E7%95%AB%E8%B2%BC%E7%B4%99(%E9%9C%A7%E9%9D%A2%E7%99%BD%E5%BA%95)-i.340395024.13001057697?sp_atk=a9a79826-5b44-405a-8349-dfccd31ba55d' class='btn btn-block btn-outline-dark'>See Details</a></div>")
         }
     //  一進入畫面時收合選單
     $(".cata").slideUp(0);
@@ -351,17 +354,31 @@
         document.querySelector(".changetext").textContent = "Thank you :)";
         console.log('you get a new follow!')
     }
- 
-    //cart
     
-    function addtoCart(){
-      $("#cart-list").append("<li class='row cart-item'><div class='col-3'><img src='https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52' class='w-100'></div><div class='col-3'>sticker.011 - ButterFly</div><div class='col-3'>40</div><div class='col-3'><button id='cancel' type='button' class='btn btn-light' onClick='Cancel()' >-</button></div></li>");
+    //cart
+    var carts = []
+
+    function addtoCart(product){
+      var opt=$("#qty").val();
+      carts.push(product[i]);
+      console.log(carts);
+      $("#cart-list").append("<li class='row cart-item'><div class='col-3'><img src="+carts[i].img+" class='w-100'></div><div class='col-3'>"+carts[i].no+"-"+carts[i].name+"</div><div class='col-3'>NT."+carts[i].price+"x"+opt+"</div><div class='col-3'><button id='cancel' type='button' class='btn btn-light' onClick='Cancel(product)' >-</button></div></li>");
+      // $("#cart-list").append("<li class='row cart-item'><div class='col-3'><img src='https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52' class='w-100'></div><div class='col-3'>sticker.011 - ButterFly</div><div class='col-3'>40</div><div class='col-3'><button id='cancel' type='button' class='btn btn-light' onClick='Cancel()' >-</button></div></li>");
       $("#cart-empty").hide();
+      
     }
+       // select
+     
+   
+      
     //
-    function Cancel(){
-      $("li.cart-item").hide();
+    function Cancel(product){
+  
+      $("li.cart-item").remove();
       $("#cart-empty").show();
+   
+      
+      
     }
 </script>
 </body>
