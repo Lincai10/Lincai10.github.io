@@ -197,6 +197,15 @@ body {
     padding: 80px 0;
     font-family: 'Abril Fatface';
 }
+#cart-price{
+    margin: 14px 0;
+    padding: 24px 0;
+    text-align: right;
+    color: #666;
+}
+.addbt{
+    border-top: 1px solid rgba(141, 141, 141);
+}
 
 /* story */
 #story{

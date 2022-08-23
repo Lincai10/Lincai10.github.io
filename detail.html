@@ -68,6 +68,7 @@
                                   </li> -->
                                   
                                 </ul>
+                                <h6 id="cart-price"></h6>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
@@ -362,9 +363,15 @@
       var opt=$("#qty").val();
       carts.push(product[i]);
       console.log(carts);
+      $("#cart-empty").hide();
+
+      $("#cart-list").empty();
       $("#cart-list").append("<li class='row cart-item'><div class='col-3'><img src="+carts[i].img+" class='w-100'></div><div class='col-3'>"+carts[i].no+"-"+carts[i].name+"</div><div class='col-3'>NT."+carts[i].price+"x"+opt+"</div><div class='col-3'><button id='cancel' type='button' class='btn btn-light' onClick='Cancel(product)' >-</button></div></li>");
       // $("#cart-list").append("<li class='row cart-item'><div class='col-3'><img src='https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52' class='w-100'></div><div class='col-3'>sticker.011 - ButterFly</div><div class='col-3'>40</div><div class='col-3'><button id='cancel' type='button' class='btn btn-light' onClick='Cancel()' >-</button></div></li>");
-      $("#cart-empty").hide();
+      
+      $("#cart-price").empty();
+      $("#cart-price").append("Total:"+opt*40);
+      $("#cart-price").addClass("addbt")
       
     }
        // select
@@ -376,9 +383,8 @@
   
       $("li.cart-item").remove();
       $("#cart-empty").show();
-   
-      
-      
+      $("#cart-price").empty();
+      $("#cart-price").removeClass("addbt");
     }
 </script>
 </body>
