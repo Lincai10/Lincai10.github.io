@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link h
-    ref="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -20,68 +19,71 @@
 <body>
     <!-- header -->
     <header>
-        <div class="topbar">
-        </div>
-        <div class="header container">
-            <div class="logo ">
-                <h4 class="w-100 text-center ">Mrs.Chippy</h4> 
-                <h6 class="w-100 text-center">EST.2019</h6>
-            </div>
-        </div>
-        <div id="menu">
-            <div class="container">
-                <ul class="nav nav-pills d-flex justify-content-between">
-                    <li class="nav-item">
-                      <a class="nav-link " href="#">HOME</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SHOPS</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="https://lincai10.github.io/calendar">CALENDAR</a>
-                        <a class="dropdown-item" href="https://lincai10.github.io/stickers">STICKERS</a>
-                        <a class="dropdown-item" href="https://lincai10.github.io/postcards">POSTCARDS</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://lincai10.github.io/candle">CANDLES</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="https://lincai10.github.io/story">STORY</a>
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@mrs.chippy">CONTACT</button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  <form>
-                                    <div class="form-group">
-                                      <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                      <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="message-text" class="col-form-label">Message:</label>
-                                      <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-                                  </form>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-outline-dark" onClick="sendMail()">Send message</button>
-                                </div>
+      <div class="topbar">
+      </div>
+      <div class="header container">
+          <div class="logo ">
+              <h4 class="w-100 text-center ">Mrs.Chippy</h4> 
+              <h6 class="w-100 text-center">EST.2019</h6>
+          </div>
+      </div>
+      <div id="menu">
+          <div class="container">
+              <ul class="nav nav-pills d-flex justify-content-between">
+                  <li class="nav-item">
+                    <a class="nav-link " href="https://lincai10.github.io">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://lincai10.github.io/projects">PROJECTS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ARTWORKS</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">ARTWORKS</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://lincai10.github.io/calendar">CALENDAR</a>
+                      <a class="dropdown-item" href="https://lincai10.github.io/stickers">STICKERS</a>
+                      <a class="dropdown-item" href="https://lincai10.github.io/postcards">POSTCARDS</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://lincai10.github.io/candle">CANDLES</a>
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@mrs.chippy">CONTACT</button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline-dark" onClick="sendMail()">Send message</button>
                               </div>
                             </div>
                           </div>
-                    </li>
-                  </ul>
-            </div>
-        </div>
-    </header>
+                        </div>
+                  </li>
+                </ul>
+          </div>
+      </div>
+  </header>
      <!-- banner -->
     <div class="banner">
         <h4 class="animate__animated animate__backInLeft">WELCOME TO</h4>

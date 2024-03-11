@@ -24,100 +24,76 @@
             </div>
         </div>
         <div id="menu">
-            <div class="container">
-                <ul class="nav nav-pills d-flex justify-content-between">
-                    <li class="nav-item">
-                      <a class="nav-link " href="https://lincai10.github.io">HOME</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SHOPS</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="https://lincai10.github.io/calendar">CALENDAR</a>
-                        <a class="dropdown-item" href="https://lincai10.github.io/stickers">STICKERS</a>
-                        <a class="dropdown-item" href="https://lincai10.github.io/postcards">POSTCARDS</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://lincai10.github.io/candle">CANDLES</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                     
-                      <button type="button" class="btn " data-toggle="modal" data-target="#cart" data-whatever=""> <img src="img/shopping-cart.png" style="width: 25px"></button>
-                        <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="cartLabel">YOUR CART</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                <h5 id="cart-empty">your cart is empty!</h5>
-                                <ul id="cart-list">
-                                  
-                                  <!-- <li id="cart-item"class="d-flex">
-                                    <div class="col-3">
-                                      <img src="https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-6">
-                                      sticker.011 - ButterFly
-                                    </div>
-                                    <div class="col-3">
-                                      40
-                                    </div>
-                                  </li> -->
-                                  
-                                </ul>
-                                <h6 id="cart-price"></h6>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
-                                  <button type="button" class="btn btn-outline-dark">Checkout</button>
-                                </div>
+          <div class="container">
+              <ul class="nav nav-pills d-flex justify-content-between">
+                  <li class="nav-item">
+                    <a class="nav-link " href="https://lincai10.github.io">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://lincai10.github.io/projects">PROJECTS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ARTWORKS</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="https://lincai10.github.io/artworks">ARTWORKS</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://lincai10.github.io/calendar">CALENDAR</a>
+                      <a class="dropdown-item" href="#">STICKERS</a>
+                      <a class="dropdown-item" href="https://lincai10.github.io/postcards">POSTCARDS</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://lincai10.github.io/candle">CANDLES</a>
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@mrs.chippy">CONTACT</button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline-dark" onClick="sendMail()">Send message</button>
                               </div>
                             </div>
                           </div>
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@mrs.chippy">CONTACT</button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  <form>
-                                    <div class="form-group">
-                                      <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                      <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="message-text" class="col-form-label">Message:</label>
-                                      <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-                                  </form>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-outline-dark" onClick="sendMail()">Send message</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </li>
-                  </ul>
-            </div>
-        </div>
+                        </div>
+                  </li>
+                </ul>
+          </div>
+      </div>
     </header>
      <!-- banner -->
    
     <!-- container -->
     <div class="detail">
         <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb  bg-white px-0"> 
+              <li class="breadcrumb-item"><a href="https://lincai10.github.io">Home</a></li>
+              <li class="breadcrumb-item"><a href="https://lincai10.github.io/artworks">Artworks</a></li>
+              <li class="breadcrumb-item"><a href="https://lincai10.github.io/stickers">Stickers</a></li>
+
+              <li class="breadcrumb-item active" aria-current="page">Detail</li>
+            </ol>
+        </nav>
            <div class="row">
                <div class="col-md-6 col-sm-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -163,6 +139,42 @@
                                 </select>
                               </div>
                             <a href="#" class="btn btn-block btn-outline-dark" onClick="addtoCart(product)">Add to Cart</a>
+                            <button type="button" class="btn btn-block btn-light" data-toggle="modal" data-target="#cart" data-whatever=""> <img src="img/shopping-cart.png" style="width: 25px"></button>
+                            <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="cartLabel">YOUR CART</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <h5 id="cart-empty">your cart is empty!</h5>
+                                    <ul id="cart-list">
+                                      
+                                      <!-- <li id="cart-item"class="d-flex">
+                                        <div class="col-3">
+                                          <img src="https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-6">
+                                          sticker.011 - ButterFly
+                                        </div>
+                                        <div class="col-3">
+                                          40
+                                        </div>
+                                      </li> -->
+                                      
+                                    </ul>
+                                    <h6 id="cart-price"></h6>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
+                                      <button type="button" class="btn btn-outline-dark">Checkout</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
                             <hr>
                             <div class="d-flex">
                                 <div class="col-6">
