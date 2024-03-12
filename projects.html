@@ -101,7 +101,7 @@
                             <p class="card-text ">Website & Mobile UI Design</p>
                         </div>
                         <div class="card-footer">
-                            <a href="https://lincai10.github.io/project01" class="btn btn-block btn-outline-dark">See Details</a>
+                            <a href="https://lincai10.github.io/venice" class="btn btn-block btn-outline-dark">See Details</a>
                         </div>
                     </div> 
                 </div>
@@ -194,30 +194,39 @@
         img:"https://media.cakeresume.com/image/upload/s--WRnM6Sgm--/c_pad,fl_png8,h_288,w_384/v1708674674/p8jejafyzeln4ifiwge5.png",
         name:"Galaxy Casino",
         note:"Website & Mobile UI Design",
+        link:"https://lincai10.github.io/galaxy"
         },
         {no:"Project 03",
         img:"https://media.cakeresume.com/image/upload/s--bkv2dwNA--/c_pad,fl_png8,h_288,w_384/v1709241359/rquzhbliaohy9a8uv7nn.png",
         name:"Lemon Bluegrass",
         note:"Website & Mobile UI Design",
+        link:"https://lincai10.github.io/lemonbluegrass"
+
         },
         {no:"Project 04",
         img:"https://media.cakeresume.com/image/upload/s--s2-NBQ4j--/c_pad,fl_png8,h_288,w_384/v1709241328/rfkhv3p6ohq4ipb6nk7v.png",
         name:"Nika Surf Board",
         note:"Website & Mobile UI Design",
+        link:"https://lincai10.github.io/nikasurfboard"
+
         },
         {no:"Project 05",
         img:"https://media.cakeresume.com/image/upload/s--yH9nKmAj--/c_pad,fl_png8,h_288,w_384/v1709769114/pp7ux10t1bekihybvnet.png",
         name:"Branding",
         note:"Logo, DM, coupon, printing",
+        link:"https://lincai10.github.io/branding"
+
         },
         {no:"Project 06",
         img:"https://media.cakeresume.com/image/upload/s--kyitYrlr--/c_pad,fl_png8,h_288,w_384/v1709537815/txdoxeks4opqmc6d3l34.png",
         name:"Casino Anniversary Promotion",
         note:"Website UI Kit",
+        link:"https://lincai10.github.io/promo"
+
         },
     ]
     for(var i=0;i<product.length;i++){
-        $("#sticker-list").append("<div class='col mb-4'><div class='card'><img src="+product[i].img+" class='card-img-top' alt='...'><div class='card-body'><span>"+product[i].no+"</span><h4 class='card-title'>"+product[i].name+"</h4><p class='card-text'>"+product[i].note+"</p></div><div class='card-footer'><a href='https://lincai10.github.io/detail' class='btn btn-block btn-outline-dark'>See Details</a></div>")
+        $("#sticker-list").append("<div class='col mb-4'><div class='card'><img src="+product[i].img+" class='card-img-top' alt='...'><div class='card-body'><span>"+product[i].no+"</span><h4 class='card-title'>"+product[i].name+"</h4><p class='card-text'>"+product[i].note+"</p></div><div class='card-footer'><a href="+product[i].link+" class='btn btn-block btn-outline-dark'>See Details</a></div>")
         }
     //  一進入畫面時收合選單
     $(".cata").slideUp(0);

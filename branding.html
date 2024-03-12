@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrs.Chippy</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="topbar">
+        </div>
+        <div class="header container">
+            <div class="logo ">
+              <h4 class="w-100 text-center ">YI LING TSAI</h4> 
+              <h6 class="w-100 text-center">A Graphic / UI Designer</h6>
+            </div>
+        </div>
+        <div id="menu">
+          <div class="container">
+              <ul class="nav nav-pills d-flex justify-content-between">
+                  <li class="nav-item">
+                    <a class="nav-link " href="https://lincai10.github.io">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://lincai10.github.io/projects">PROJECTS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ARTWORKS</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="https://lincai10.github.io/artworks">ARTWORKS</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://lincai10.github.io/calendar">CALENDAR</a>
+                      <a class="dropdown-item" href="https://lincai10.github.io/stickers">STICKERS</a>
+                      <a class="dropdown-item" href="https://lincai10.github.io/postcards">POSTCARDS</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://lincai10.github.io/candle">CANDLES</a>
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@mrs.chippy">CONTACT</button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline-dark" onClick="sendMail()">Send message</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </li>
+                </ul>
+          </div>
+      </div>
+    </header>
+     <!-- banner -->
+   
+    <!-- container -->
+    <div class="detail">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb  bg-white px-0"> 
+              <li class="breadcrumb-item"><a href="https://lincai10.github.io">Home</a></li>
+              <li class="breadcrumb-item"><a href="https://lincai10.github.io/projects">Projects</a></li>
+
+              <li class="breadcrumb-item active" aria-current="page">Branding</li>
+            </ol>
+          </nav>
+          <div class="row">
+              <img src="img/projects/brand-1.jpg" alt="" class="w-100">
+              <img src="img/projects/brand-2.jpg" alt="" class="w-100">
+
+              <img src="img/projects/brand-3.jpg" alt="" class="w-100">
+          </div>
+        </div>
+    </div>
+    
+   
+    <div class="subscribe">
+        <div class="container text-center">
+            <div class="card">
+                <div class="card-body text-center">
+                  <h4 class="card-title">FOLLOW MRS.CHIPPY</h4>
+                  <p class="card-text">Our newsletter keeps discerning customers abreast of everythingy chippy’s.</p>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email address" aria-label="username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary changetext" type="button" id="button-addon2" onClick="changeText()">Send</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---footer-->
+    <footer >
+       <div class="footer container">
+           <div class="row">
+               <div class="col-sm-12 col-md-4">
+                    <h5 class="link-tit">SERVICES</h5>   
+                    <ul>
+                        <li>
+                            <a href="" class="footer-link">E-GIFT CARDS</a>
+                        </li>
+                        <li>
+                            <a href="https://lincai10.github.io/faq" class="footer-link">FAQS</a>
+                        </li>
+                        <li>
+                            <a href="https://lincai10.github.io/faq" class="footer-link">SHIPPING & RETURN</a>
+                        </li>
+                   </ul>
+               </div>
+               <div class="col-sm-12 col-md-4">
+                    <h5 class="link-tit">ABOUT US</h5>   
+                    <ul>
+                        <li>
+                            <a href="https://lincai10.github.io/story" class="footer-link">STORY</a>
+                        </li>
+                        <li>
+                            <a href="https://shopee.tw/mrs.chippy?categoryId=100636&itemId=7063875582" class="footer-link">STORIES</a>
+                        </li>
+                        <li>
+                            <a href="https://lincai10.github.io/faq" class="footer-link">CAREERS</a>
+                        </li>
+                     </ul>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h5 class="link-tit">SOCIAL MEDIA</h5>   
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/MrsChippy%E6%A0%97%E9%BC%A0%E5%A4%AB%E4%BA%BA-101075815150724/" target="_blank" class="footer-link">
+                                <img src="img/fb.png" alt="" style="width:24px;">
+                            </a>
+                            <a href="https://www.instagram.com/mrs.chippy_/" target="_blank" class="footer-link">
+                                <img src="img/ig.png" alt="" style="width:24px;">
+                            </a>
+                        </li>
+                     </ul>
+                </div>
+           </div>
+          
+       </div>
+        <div class="copyright " style="padding: 24px 0;border-top: 1px solid rgba(155,155,155,0.7);">
+        <p style="color: rgb(155, 155, 155); text-align: right; width: 100%;">©2022 Mrs.chippy. All rights reserved.</p>
+        </div>
+        
+    </footer>
+    
+<script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+<script type="text/javascript" src="css/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="css/bootstrap-4.5.0-dist/js/bootstrap.bundle.js"></script>
+
+<script>
+    var product=[
+        {no:"sticker.011",
+        img:"https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52",
+        name:"ButterFly",
+        price:40,
+        },
+        {no:"sticker.012",
+        img:"https://cf.shopee.tw/file/5347aada760040b461e9446851154225",
+        name:"Acorns",
+        price:40,
+        },
+        {no:"sticker.013",
+        img:"https://cf.shopee.tw/file/069c048ff5bb8b695ae6ed630d2d8225",
+        name:"Mushrooms 1",
+        price:40,
+        },
+    ]
+    for(var i=1;i<product.length;i++){
+        $("#sticker-list").append("<div class='col mb-4'><div class='card'><img src="+product[i].img+" class='card-img-top' alt='...'><div class='card-body'><span>"+product[i].no+"</span><h4 class='card-title'>"+product[i].name+"</h4><p class='card-text'>Hand drawing matter sticker.</p><h5 class='card-title'>NT."+product[i].price+"</h5></div><div class='card-footer'><a href='https://shopee.tw/%E6%A0%97%E9%BC%A0%E5%A4%AB%E4%BA%BA-%E6%8F%92%E7%95%AB%E8%B2%BC%E7%B4%99(%E9%9C%A7%E9%9D%A2%E7%99%BD%E5%BA%95)-i.340395024.13001057697?sp_atk=a9a79826-5b44-405a-8349-dfccd31ba55d' class='btn btn-block btn-outline-dark' target='_blank'>See Details</a></div>")
+        }
+    //  一進入畫面時收合選單
+    $(".cata").slideUp(0);
+
+    for (i = 0; i < $(".main").length; i++) {
+        //  點選按扭時收合或展開選單
+        $(".main:eq(" + i + ")").on("mouseover", {
+            id: i
+        }, function(e) {
+            n = e.data.id
+            $(".cata:eq(" + n + ")").slideToggle()
+            $(".cata:not(:eq(" + n + "))").slideUp()
+            $(".main:eq(" + n + ")").text(newtext[n])
+        })
+        $(".main:eq(" + i + ")").on("mouseleave", {
+            id: i
+        }, function(e) {
+            n = e.data.id
+            $(".main:eq(" + n + ")").text(oldtext[n])
+            $(".cata").stop();
+        })
+    }
+    $('.dropdown-toggle').dropdown()
+
+    // contact
+    $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-body input').val(recipient)
+})
+    //sendMail
+    function sendMail(){
+        window.open("mailto:mrs.chippy99@gmail.com");
+    }
+    //changeText
+    function changeText(){
+        document.querySelector(".changetext").textContent = "Thank you :)";
+        console.log('you get a new follow!')
+    }
+    
+    //cart
+    var carts = []
+
+    function addtoCart(product){
+      var opt=$("#qty").val();
+      carts.push(product[i]);
+      console.log(carts);
+      $("#cart-empty").hide();
+
+      $("#cart-list").empty();
+      $("#cart-list").append("<li class='row cart-item'><div class='col-3'><img src="+carts[i].img+" class='w-100'></div><div class='col-3'>"+carts[i].no+"-"+carts[i].name+"</div><div class='col-3'>NT."+carts[i].price+"x"+opt+"</div><div class='col-3'><button id='cancel' type='button' class='btn btn-light' onClick='Cancel(product)' >-</button></div></li>");
+      // $("#cart-list").append("<li class='row cart-item'><div class='col-3'><img src='https://cf.shopee.tw/file/fa6a35d8325ec03841f3adc6feeafd52' class='w-100'></div><div class='col-3'>sticker.011 - ButterFly</div><div class='col-3'>40</div><div class='col-3'><button id='cancel' type='button' class='btn btn-light' onClick='Cancel()' >-</button></div></li>");
+      
+      $("#cart-price").empty();
+      $("#cart-price").append("Total:"+opt*40);
+      $("#cart-price").addClass("addbt")
+      
+    }
+       // select
+     
+   
+      
+    //
+    function Cancel(product){
+  
+      $("li.cart-item").remove();
+      $("#cart-empty").show();
+      $("#cart-price").empty();
+      $("#cart-price").removeClass("addbt");
+    }
+</script>
+</body>
+</html>
